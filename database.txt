@@ -1,0 +1,18 @@
+create database z_receitas;
+
+create table cad_user (
+  id int(4) auto_increment primary key,
+  name varchar(40) not null,
+  pass varchar(20) not null,
+  email varchar(40) not null,
+  sex varchar (20) not null
+
+);
+
+CREATE table cad_rec(
+  id_rec int PRIMARY key AUTO_INCREMENT,
+  nome_rec varchar(40) not null,
+  ig text not null,
+  mod_preparo text not null,
+  id_user int not null
+  );
